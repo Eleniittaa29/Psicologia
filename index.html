@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Grigoras - Psicóloga Responsive</title>
+   <link rel="stylesheet" href="Psicologia.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="logo-section">
+                    <div class="img1" id="inicio">
+                        <img src="IMG/1.png" alt="Logo de Elena Grigoras" title="Logo" onclick="irAInicio()">
+                    </div>
+                    <div class="nombre-container">
+                        <div class="nombre">
+                            <p>Marta Gomez</p>
+                        </div>
+                        <div class="nombre1">
+                            <p>Psicóloga</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav-desktop">
+                    <li><a href="index.html" onclick="irAInicio(); return false;">Inicio</a></li>
+                    <li><a href="index.html">Sobre mí</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="navigateTo('info1.html')">Psicología infantil y juvenil</a>
+                            <a href="#" onclick="navigateTo('info3.html')">Psicología sexual y pareja</a>
+                            <a href="#" onclick="navigateTo('info2.html')">Personas con alta sensibilidad (PAS)</a>
+                        </div>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <div class="container">
+                    <a href="tel:+34652527287" class="btn">Pide cita: 652 527 287</a>
+                </div>
+                
+
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+
+            <!-- Menú móvil -->
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html" onclick="irAInicio(); closeMobileMenu();">Inicio</a></li>
+                    <li><a href="index.html" onclick="closeMobileMenu();">Sobre mí</a></li>
+                    <li><a href="#servicios" onclick="closeMobileMenu();">Servicios</a></li>
+                    <li><a href="contacto.html" onclick="closeMobileMenu();">Contacto</a></li>
+                </ul>
+                <div class="container">
+                    <button class="btn">Pide cita: 652 527 287</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <section class="seccion1" id="inicio">
+            <div class="overlay">
+                <h1 class="nom">Marta Gomez</h1>
+                <h2 class="lugar">Psicóloga en Madrid</h2>
+                <p class="especialista">Especialista en EMDR, personas con alta sensibilidad (PAS) y discapacidad.</p>
+                <div class="boton">
+                    <button class="btn" id="Contactar" onclick="irAContacto()">Contactar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="sobremi">
+        <div class="text-box">
+            <div class="text-content">
+                <h2>¡Hola! Soy <span>Marta Gomez</span>,<br> psicóloga general sanitaria</h2>
+                <p>
+                    Mi vocación nació en la adolescencia, cuando el deseo de ayudar a personas cercanas con problemas de salud mental 
+                    me llevó a estudiar Psicología. Hoy, con experiencia en consulta privada y ahora también en modalidad online, 
+                    estoy aquí para ofrecer apoyo accesible y profesional.
+                </p>
+            </div>
+            <div class="text-image">
+                <img src="IMG/pexels-shvets-production-7176319.jpg" alt="Foto Elena Grigoras">
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section3" id="servicios">
+        <div class="cont2">
+            <p class="ayuda"><strong>Te acompañamos en tu bienestar</strong></p>
+        </div>
+        
+        <div class="cartas">
+            <div class="card">
+                <img src="IMG/7.jpg" alt="Psicoterapia infantil y juvenil">
+                <div class="cardcont">
+                    <h4><b>Psicoterapia infantil y juvenil</b></h4>
+                    <p>Durante la terapia trabajaremos mano a mano con los padres o cuidadores del menor ya que es
+                        un pilar fundamental.</p>
+                    <button class="buttoncard" onclick="irAInfo1()"><span>Más información</span></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="IMG/9.jpg" alt="Personas con alta sensibilidad">
+                <div class="cardcont">
+                    <h4><b>Personas con alta sensibilidad (PAS)</b></h4>
+                    <p>Las personas PAS tienen su sistema nervioso más desarrollado que la mayoría de la gente.</p>
+                    <button class="buttoncard" onclick="irAInfo2()"><span>Más información</span></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="IMG/8.jpg" alt="Terapia sexual y de pareja">
+                <div class="cardcont">
+                    <h4><b>Terapia sexual y de pareja</b></h4>
+                    <p>¿Sientes que últimamente algo no funciona en tu pareja?, ¿hay discusiones de forma constante?</p>
+                    <button class="buttoncard" onclick="irAInfo3()"><span>Más información</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="IMG/1.png" alt="Logo de Elena Grigoras" onclick="irAInicio()">
+                <p>Marta Gomez</p>
+                <p>Psicóloga</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                     <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contáctame</h3>
+                <div class="container">
+                    <a href="tel:+34652527287" class="btn">Pide cita: 652 527 287</a>
+                </div>
+                                <p>Madrid, España</p>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <ul>
+                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+            <p>&copy; 2024 Marta Gomez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="psicologia.js"></script>
+</body>
+</html>

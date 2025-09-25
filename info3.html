@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicología</title>
+    <link rel="stylesheet" href="Psicologia.css"> <!-- Archivo CSS externo -->
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+      <!-- Header -->
+      <header>
+        <nav>
+            <div class="menu">
+                <div class="logo-section">
+                    <div class="img1" id="inicio">
+                        <img src="IMG/1.png" alt="Logo de Elena Grigoras" title="Logo" onclick="irAInicio()">
+                    </div>
+                    <div class="nombre-container">
+                        <div class="nombre">
+                            <p>Marta Gomez</p>
+                        </div>
+                        <div class="nombre1">
+                            <p>Psicóloga</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav-desktop">
+                    <li><a href="index.html" onclick="irAInicio(); return false;">Inicio</a></li>
+                    <li><a href="index.html">Sobre mí</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios</a>
+                        <div class="dropdown-content">
+                            <a href="info1.html" onclick="navigateTo('info1.html')">Psicología infantil y juvenil</a>
+                            <a href="info3.html" onclick="navigateTo('info3.html')">Psicología sexual y pareja</a>
+                            <a href="info2.html" onclick="navigateTo('info2.html')">Personas con alta sensibilidad (PAS)</a>
+                        </div>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <div class="container">
+                  <a href="tel:+34652527287" class="btn">Pide cita: 652 527 287</a>
+              </div>
+              
+
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+
+            <!-- Menú móvil -->
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html" onclick="irAInicio(); closeMobileMenu();">Inicio</a></li>
+                    <li><a href="index.html" onclick="closeMobileMenu();">Sobre mí</a></li>
+                    <li><a href="#servicios" onclick="closeMobileMenu();">Servicios</a></li>
+                    <li><a href="contacto.html" onclick="closeMobileMenu();">Contacto</a></li>
+                </ul>
+                <div class="container">
+                    <button class="btn">Pide cita: 652 527 287</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="servicios-infantil" class="sobre-mi">
+            <div class="sobre-mi-content">
+              <div class="imagen">
+                <img src="IMG/8.jpg" alt=" Psicologa" class="img-sobre-mi">
+              </div>
+              <div class="texto-sobre-mi">
+                <h1><strong>Psicoterapia sexual y pareja</strong></h1>
+              </div>
+            </div>
+          </section>
+          
+
+       <!-- Terapia Sexual y de Pareja — Sección lista para usar -->
+<section id="terapia-pareja" class="terapia-section" aria-labelledby="terapia-title">
+    <div class="terapia-inner">
+      <!-- Imagen / visual -->
+      <figure class="terapia-figure" aria-hidden="true">
+        <img src="IMG/8.jpg" alt="Pareja conversando en sesión terapéutica" />
+      </figure>
+  
+      <!-- Contenido -->
+      <div class="terapia-content">
+        <h2 id="terapia-title">Terapia Sexual y de Pareja</h2>
+        <p class="lead">
+          Recupera la conexión, mejora la comunicación y redescubre la intimidad. Sesiones confidenciales y personalizadas
+          para parejas y personas que desean transformar su vida afectiva y sexual.
+        </p>
+  
+        <ul class="benefits" aria-hidden="false">
+          <li><strong>Comunicación efectiva:</strong> herramientas prácticas para dialogar sin herir.</li>
+          <li><strong>Recuperar el deseo:</strong> estrategias para restablecer la intimidad con respeto.</li>
+          <li><strong>Resolver conflictos:</strong> gestionar celos, pérdidas de confianza e infidelidades.</li>
+          <li><strong>Enfoque profesional:</strong> técnicas avaladas y trato cercano.</li>
+        </ul>
+  
+        <div class="ctas">
+          <a class="btn ghost" href="mailto:info@tudominio.com?subject=Información%20Terapia%20Pareja" title="Solicitar información por email">Solicitar información</a>
+        </div>
+  
+        <div class="trust">
+          <div class="trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2L3 6v6c0 5 3.7 9.7 9 10 5.3-.3 9-5 9-10V6l-9-4z"></path>
+            </svg>
+            <span>Confidencialidad garantizada</span>
+          </div>
+          <div class="trust-item">
+           
+          </div>
+        </div>
+  
+        <p class="small">
+          ¿Tienes dudas? <a href="tel:+34123456789">Llámanos al +34 123 456 789</a> o reserva ahora — primera consulta con tarifa especial.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+ 
+  
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección izquierda: Logo -->
+            <div class="footer-logo">
+                <img src="IMG/1.png" alt="Logo de Elena Grigoras" width="100" height="100">
+                <p>Elena Grigoras</p>
+                <p>Psicóloga</p>
+            </div>
+
+            <!-- Sección central: Enlaces de navegación -->
+            <div class="footer-links">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección derecha: Contacto y redes sociales -->
+            <div class="footer-contact">
+                <h3>Contáctame</h3>
+                <div class="container">
+                  <a href="tel:+34652527287" class="btn">Pide cita: 652 527 287</a>
+              </div>
+                  
+            </div>
+        </div>
+
+        <!-- Sección inferior con enlaces legales -->
+        <div class="footer-legal">
+            <ul>
+                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+            <p>&copy; 2024 Marta Gomez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="Psicologia.js"></script>
+</body>
+
+</html>

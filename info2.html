@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicología</title>
+    <link rel="stylesheet" href="Psicologia.css"> <!-- Archivo CSS externo -->
+    <script>
+        // Función para redirigir al inicio cuando se hace clic en el logo
+        function irAInicio() {
+            window.location.href = 'index.html';  // Ajusta esto al nombre de tu página de inicio si es diferente
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+      <!-- Header -->
+      <header>
+        <nav>
+            <div class="menu">
+                <div class="logo-section">
+                    <div class="img1" id="inicio">
+                        <img src="IMG/1.png" alt="Logo de Elena Grigoras" title="Logo" onclick="irAInicio()">
+                    </div>
+                    <div class="nombre-container">
+                        <div class="nombre">
+                            <p>Marta Gomez</p>
+                        </div>
+                        <div class="nombre1">
+                            <p>Psicóloga</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav-desktop">
+                    <li><a href="#inicio" onclick="irAInicio(); return false;">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mí</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropbtn">Servicios</a>
+                        <div class="dropdown-content">
+                            <a href="info1.html" onclick="navigateTo('info1.html')">Psicología infantil y juvenil</a>
+                            <a href="info3.html" onclick="navigateTo('info3.html')">Psicología sexual y pareja</a>
+                            <a href="info2.html" onclick="navigateTo('info2.html')">Personas con alta sensibilidad (PAS)</a>
+                        </div>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <div class="container">
+                    <a href="tel:+34652527287" class="btn">Pide cita: 652 527 287</a>
+                </div>
+                
+
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+
+            <!-- Menú móvil -->
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html" onclick="irAInicio(); closeMobileMenu();">Inicio</a></li>
+                    <li><a href="index.html" onclick="closeMobileMenu();">Sobre mí</a></li>
+                    <li><a href="#servicios" onclick="closeMobileMenu();">Servicios</a></li>
+                    <li><a href="contacto.html" onclick="closeMobileMenu();">Contacto</a></li>
+                </ul>
+                <div class="container">
+                    <button class="btn">Pide cita: 652 527 287</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="servicios-infantil" class="sobre-mi">
+            <div class="sobre-mi-content">
+                <div class="imagen">
+                    <img src="IMG/9.jpg" alt="Belen Sanchez Psicologa" class="img-sobre-mi" style="height: 400px;width: 550px;">
+                </div>
+                <div class="texto-sobre-mi">
+                    <h1><strong>Personas con alta sensibilidad (PAS)</strong></h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="container7">
+            <div class="texto7">
+                <h1 class="titulo7"><strong>¿En qué consiste?</strong></h1>
+                <p>Hablamos de la Alta Sensibilidad cuando una persona tiene su sistema nervioso más desarrollado que la mayoría de la gente. Como consecuencia, esa persona recibe mucha más información a través de los sentidos que alguien con una mediana sensibilidad. Aunque se puede confundir con personas introvertidas, es algo erróneo, ya que la Persona con Alta Sensibilidad puede ser tanto introvertida o extrovertida.</p>
+                <p class="colorp">LA ALTA SENSIBILIDAD ES UN RASGO HEREDITARIO QUE AFECTA A DOS DE CADA DIEZ PERSONAS, HOMBRES Y MUJERES POR IGUAL.</p>
+                <p>ES IMPORTANTE SEÑALAR QUE UNA PERSONA CON ALTA SENSIBILIDAD NO TIENE NINGÚN TRASTORNO NI NINGUNA ENFERMEDAD</p>
+            </div>
+
+            <div class="especialidades">
+                <p>Especialidades</p>
+                <div class="botones">
+                    <button class="btn" onclick="window.location.href='info1.html'">Psicoterapia infantil y juvenil</button>
+                    <button class="btn" onclick="window.location.href='info2.html'">Personas con alta sensibilidad (PAS)</button>
+                    <button class="btn" onclick="window.location.href='info3.html'">Terapia sexual y de pareja</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="pas">
+            <!-- Primer bloque -->
+            <div class="estudios2">
+              <div class="titulaciones2">
+                <i class="fas fa-heart"></i>
+                <h3>La PAS se puede sentir</h3>
+              </div>
+              <ul class="ul3">
+                <li>Insegura y tímida</li>
+                <li>Afectada por luces brillantes, olores fuertes y ruido en general</li>
+                <li>Dolida por el sufrimiento ajeno</li>
+                <li>Abrumada por un exceso de trabajo y masas de gente</li>
+                <li>Conmovida por las artes y la naturaleza</li>
+                <li>Llamada a ayudar a los necesitados</li>
+              </ul>
+            </div>
+          
+            <!-- Segundo bloque -->
+            <div class="estudios2">
+              <div class="titulaciones2">
+                <i class="fas fa-star"></i>
+                <h3>Comportamientos frecuentes en las PAS</h3>
+              </div>
+              <ul class="ul3">
+                <li>Detectar sutilidades en el ambiente</li>
+                <li>Gran facilidad para enamorarse</li>
+                <li>Tendencias perfeccionistas</li>
+                <li>Umbral de dolor bastante bajo</li>
+                <li>Dificultad para mantener límites personales y decir “no”</li>
+                <li>Dificultades con situaciones estresantes</li>
+                <li>Mucha sensibilidad ante la crítica</li>
+              </ul>
+            </div>
+          </div>
+          
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección izquierda: Logo -->
+            <div class="footer-logo">
+                <img src="IMG/1.png" alt="Logo de Elena Grigoras" width="100" height="100" onclick="irAInicio()">
+                <p>Marta Gomez</p>
+                <p>Psicóloga</p>
+            </div>
+
+            <!-- Sección central: Enlaces de navegación -->
+            <div class="footer-links">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección derecha: Contacto y redes sociales -->
+            <div class="footer-contact">
+                <h3>Contáctame</h3>
+                <div class="container">
+                    <a href="tel:+34652527287" class="btn">Pide cita: 652 527 287</a>
+                </div>
+                          
+            </div>
+        </div>
+
+        <!-- Sección inferior con enlaces legales -->
+        <div class="footer-legal">
+            <ul>
+                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+            <p>&copy; 2024 Marta Gomez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="Psicologia.js"></script>
+</body>
+
+</html>
